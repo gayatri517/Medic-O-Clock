@@ -6,13 +6,19 @@
   font-weight: bold;
 }
 .homeimage {
-	width: 500px;
-	height: 500px;
+	width: 100%;
+	height: 600px;
+}
+.headerText {
+  background-image: url("new.jpg");
+  color: #000;
+  font-weight: bold;
+  font-family: 'Roboto Condensed Sans Serif';
 }
 #footer {
   margin-bottom: 0px;
   padding-top: 5px;
-  position: absolute;
+  position: relative;
   text-align: center;
   bottom: 0;
   width: 100%;
@@ -24,16 +30,16 @@
 .loginpage {
   padding-left: 530px;
   background-color: #125d98;
-  padding-bottom: 200px;
+  padding-bottom: 330px;
 }
 .favv {
   color: #fff;
-  padding-left: 120px;
+  text-align: center;
   padding-bottom: 10px;
 }
 .favvOne {
+  text-align: center;
   color: #fff;
-  padding-left: 70px;
   padding-bottom: 10px;
 }
 #formContent {
@@ -301,4 +307,8 @@ input[type=text]:placeholder {
 	padding-top: 20px;
 	text-align: center;
 	width: 50%;
+}
+.ContactUs {
+  background-color: #125d98;
+  padding: 20px 0px 20px 100px;
 }
