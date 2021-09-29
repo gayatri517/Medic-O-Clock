@@ -9,6 +9,12 @@
 	width: 100%;
 	height: 600px;
 }
+.AppointmentContainer {
+  background-color: #C4C4C4;
+  width: 500px;
+  height: 200px;
+  margin: 20px 50px 200px 50px;
+}
 .headerText {
   background-image: url("new.jpg");
   color: #000;
@@ -34,12 +40,14 @@
 }
 .favv {
   color: #fff;
-  text-align: center;
+  text-align: left;
+  padding-left: 110px;
   padding-bottom: 10px;
 }
 .favvOne {
-  text-align: center;
+  text-align: left;
   color: #fff;
+  padding-left: 60px;
   padding-bottom: 10px;
 }
 #formContent {
@@ -300,15 +308,81 @@ input[type=text]:placeholder {
   font-family: sans-serif;
   color: #aaa;
 }
+#AboutUs {
+  padding: 0px 0px 100px 0px;
+}
 .AboutUsText {
 	text-align: center;
+  font-weight: bold;
+  font-size: 3rem;
+  padding: 15px 0px 30px 0px;
 }
 .wrapper {
-	padding-top: 20px;
-	text-align: center;
-	width: 50%;
+	padding-top: 50px;
 }
-.ContactUs {
+.aboutUsImg {
+  height: 100px;
+  weight 100px;
+  float: right;
+}
+#ContactUs {
   background-color: #125d98;
-  padding: 20px 0px 20px 100px;
+  padding: 50px 0px 50px 550px;
+}
+.insideText {
+  font-weight: bold;
+}
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  border-radius: 7px;
+  padding-top: 7px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  margin-top: 50px;
+  text-align: left;
+  color: #000;
+  background-color: #C4C4C4;
+}
+
+
+#testimonials{
+  text-align: center;
+  background-image: image("new.jpg");
+  color: #000;
+}
+.testimonial-img{
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.imagee {
+  font-size: 4rem;
+}
+.headerP {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 230px;
+}
+.carouselTexterrr {
+  padding-bottom: 200px;
+  text-shadow: 2px 2px 4px #000000;
+}
+.skill-row{
+  font-size: 1.3rem;
+  margin-left: 200px;
+  width: 70%;
+  font-weight: bold;
+  text-align: left;
+}
+.web{
+  border-radius: 110px;
+  margin-left: 100px;
+  height: 200px;
+  weight: 200px;
+  float: right;
 }
