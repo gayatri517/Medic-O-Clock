@@ -1,2 +1,29 @@
 <%- include("partials/header"); -%>
+<!--appointment booking starts here-->
+<section id="AppointmentBooking">
+  <div id="formContent">
+    <!-- Tabs Titles -->
+    <br>
+    <h2 style="color: #125d98">Appointment Booking</h2>
+    <!-- Login Form -->
+    <form>
+      <input type="text" id="namee" class="fadeIn second" name="username" placeholder="Enter name">
+      <input type="text" id="emaill" class="fadeIn third" name="password" placeholder="Enter email">
+      <select class="SearchDoc" id="Doctors" name="Doctors">
+        <option value="None">None</option>
+        <option value="Cardiologist">Cardiologist</option>
+        <option value="Audiologist">Audiologist</option>
+        <option value="Dentist">Dentist</option>
+        <option value="Gynaecologist">Gynaecologist</option>
+        <option value="Orthopaedic">Orthopaedic</option>
+        <option value="Paediatrician">Paediatrician</option>
+        <option value="Psychiatrists">Psychiatrists</option>
+      </select>
+      <input class="SearchDoc" type="date" name="date" value="" required></input>
+      <input class="SearchDoc" type="time" name="time" value="" required></input>
+      <input type="submit" class="fadeIn fourth" value="Request Appointment">
+    </form>
+  </div>
+</section>
+<!--appointment booking ends here-->
 <%- include("partials/footer"); -%>
