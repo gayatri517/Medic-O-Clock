@@ -119,6 +119,9 @@ input[type=button]:active, input[type=submit]:active, input[type=reset]:active {
   transform: scale(0.95);
 }
 
+.SearchDoc,
+input[type=email],
+input[type=password],
 input[type=text] {
   background-color: #f6f6f6;
   border: none;
@@ -140,11 +143,15 @@ input[type=text] {
   border-radius: 5px 5px 5px 5px;
 }
 
+.SearchDoc,
 input[type=text]:focus {
   background-color: #fff;
   border-bottom: 2px solid #125d98;
 }
 
+.SearchDoc,
+input[type=email],
+input[type=password],
 input[type=text]:placeholder {
   color: #cccccc;
 }
@@ -336,18 +343,23 @@ input[type=text]:placeholder {
     text-align: center;
 }
 
-.secret-text {
+.container {
   border-radius: 7px;
   padding-top: 7px;
   padding-left: 10px;
   padding-bottom: 20px;
   font-weight: bold;
   margin-top: 50px;
-  text-align: left;
+  margin-bottom: 250px;
+  text-align: center;
   color: #000;
   background-color: #C4C4C4;
 }
 
+.secret-text {
+  padding-left: 20px;
+  text-align: left;
+}
 
 #testimonials{
   text-align: center;
@@ -386,7 +398,7 @@ input[type=text]:placeholder {
 }
 #AppointmentBooking {
   background-color: #125d98;
-  padding: 50px 0px 50px 550px;
+  padding: 50px 0px 150px 550px;
 }
 .insideText {
   font-weight: bold;

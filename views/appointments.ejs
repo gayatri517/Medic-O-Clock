@@ -9,10 +9,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="register">Logout</a>
+          <a class="nav-link" href="/logout">Logout</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="login">Book Appointment</a>
+          <a class="nav-link" href="/book">Book Appointment</a>
         </li>
       </ul>
     </div>
@@ -20,7 +20,14 @@
 </section>
 <!-- Navbar ends-->
   <div class="container">
-    <p class="secret-text">My Appointments</p>
-</div>
+    <h2><b>MY APPOINTMENTS </b></h2>
+      <p class="secret-text">NAME:  <%=user.name%></p>
+      <p class="secret-text">EMAIL ID:  <%=user.username%></p>
+      <p class="secret-text">PHONE NUMBER:  <%=user.phone%></p>
+      <p class="secret-text">APPOINTMENT SPECIALIST:  <%=user.doctor%></p>
+      <p class="secret-text">APPOINTMENT TAKEN FOR:  <%=user.date%></p>
+      <p class="secret-text">APPOINTMENT TIME:  <%=user.time%> IST</p>
+      <p class="secret-text">MEDICAL HISTORY:  <%=user.medic%></p>
+  </div>
 
 <%- include("partials/footer"); -%>
