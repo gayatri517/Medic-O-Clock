@@ -61,6 +61,10 @@ app.get("/login", function(req, res) {
   res.render("login");
 });
 
+app.get("/faq", function(req, res) {
+  res.render("faq");
+});
+
 app.get("/appointments", function(req, res) {
   if (req.isAuthenticated()) {
     res.render("appointments",{user: req.user});
@@ -68,6 +72,8 @@ app.get("/appointments", function(req, res) {
     res.redirect("/login");
   }
 });
+
+//action="mailto: <%= user.username %>"
 
 app.get("/logout", function(req, res){
   req.logout();
