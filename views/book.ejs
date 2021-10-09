@@ -1,16 +1,17 @@
 <%- include("partials/header"); -%>
-<!--appointment booking starts here-->
+
+<!-- appointment booking section starts -->
 <section id="AppointmentBooking">
   <div class="wrapper fadeInDown">
     <div id="formContentBook">
-      <!-- Tabs Titles -->
       <br>
       <h2 style="color: #125d98">Appointment Booking</h2>
-      <!-- Login Form -->
       <form action="/book" method="POST">
         <input type="text" id="namee" class="fadeIn second" name="name" placeholder="Enter name">
         <input class="SearchDoc fadeIn fourth" type="text" name="phone" placeholder="Enter phone number">
         <select class="SearchDoc fadeIn fourth" id="Doctors" name="doctors">
+
+          <!-- Choose Departments section starts -->
           <option value="None">Choose Department</option>
           <option value="None">Dermatologist</option>
           <option value="Cardiologist">Cardiologist</option>
@@ -21,6 +22,8 @@
           <option value="Paediatrician">Paediatrician</option>
           <option value="Psychiatrists">Psychiatrists</option>
         </select>
+        <!-- Choose Departments section ends -->
+
         <input class="SearchDoc fadeIn fourth" type="date" name="date" value="" required></input>
         <input class="SearchDoc fadeIn fourth" type="time" name="time" value="" required></input>
         <input type="text" id="namee" class="fadeIn second" name="medic" placeholder="Enter medical history">
@@ -29,5 +32,6 @@
     </div>
   </div>
 </section>
-<!--appointment booking ends here-->
+<!-- appointment booking section ends -->
+
 <%- include("partials/footer"); -%>

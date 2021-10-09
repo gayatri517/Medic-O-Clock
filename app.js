@@ -25,11 +25,11 @@ app.use(session({
 app.use(passport.initialize());
 app.use(passport.session());
 
-mongoose.connect("mongodb://localhost:27017/userDB", {
+mongoose.connect("mongodb://localhost:27017/patientDB", {
   useNewUrlParser: true
 });
 
-const userSchema = new mongoose.Schema({
+const patientSchema = new mongoose.Schema({
   username: String,
   password: String,
   name: String,
@@ -40,14 +40,14 @@ const userSchema = new mongoose.Schema({
   medic: String
 });
 
-userSchema.plugin(passportLocalMongoose);
+patientSchema.plugin(passportLocalMongoose);
 
-const User = new mongoose.model("User", userSchema);
+const Patient = new mongoose.model("Patient", patientSchema);
 
-passport.use(User.createStrategy());
+passport.use(Patient.createStrategy());
 
-passport.serializeUser(User.serializeUser());
-passport.deserializeUser(User.deserializeUser());
+passport.serializeUser(Patient.serializeUser());
+passport.deserializeUser(Patient.deserializeUser());
 
 app.get("/", function(req, res) {
   res.render("home");
@@ -73,8 +73,6 @@ app.get("/appointments", function(req, res) {
   }
 });
 
-//action="mailto: <%= user.username %>"
-
 app.get("/logout", function(req, res){
   req.logout();
   res.redirect("/");
@@ -96,7 +94,7 @@ app.post("/book", function(req, res){
   const submittedTime = req.body.time;
   const submittedHistory = req.body.medic;
 
-  User.findById(req.user.id, function(err, foundUser){
+  Patient.findById(req.user.id, function(err, foundUser){
     if(err){
       console.log(err);
     } else {
@@ -117,7 +115,7 @@ app.post("/book", function(req, res){
 
 
 app.post("/register", function(req, res) {
-  User.register({
+  Patient.register({
     username: req.body.username
   }, req.body.password, function(err, user) {
     if (err) {
@@ -132,7 +130,7 @@ app.post("/register", function(req, res) {
 });
 
 app.post("/login", function(req, res) {
-      const user = new User({
+      const user = new Patient({
         username: req.body.username,
         password: req.body.password
       });
@@ -151,6 +149,6 @@ app.post("/login", function(req, res) {
 
 
 
-    app.listen(3000, function() {
-      console.log("Server started on port 3000.");
-    });
+app.listen(3000, function() {
+  console.log("Server started on port 3000.");
+});

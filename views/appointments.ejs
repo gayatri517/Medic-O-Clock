@@ -1,4 +1,5 @@
 <%- include("partials/header"); -%>
+
 <!--Navbar starts -->
 <section id="navbar">
   <nav class="navbar navbar-expand-lg navbar-dark">
@@ -19,6 +20,8 @@
   </nav>
 </section>
 <!-- Navbar ends-->
+
+<!-- My appointments section starts -->
   <div class="container">
     <h2><b>MY APPOINTMENTS </b></h2>
       <p class="secret-text">NAME:  <%=user.name%></p>
@@ -29,5 +32,6 @@
       <p class="secret-text">APPOINTMENT TIME:  <%=user.time%> IST</p>
       <p class="secret-text">MEDICAL HISTORY:  <%=user.medic%></p>
   </div>
+<!-- My appointments section ends -->
 
 <%- include("partials/footer"); -%>
