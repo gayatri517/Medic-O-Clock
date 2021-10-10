@@ -7,7 +7,6 @@
 
 <body>
   <h1 style="text-align: center;"><b>Medic O' Clock</b></h1>
-  <hr>
   <p style="text-align: center; font-size: 1.2rem">Medic O’ Clock is an online platform for doctors and patients
     for appointment booking and time scheduling.
     This initiative has been started to help the small clinics and hospitals in controlling the crowd coming at the
@@ -17,6 +16,13 @@
     without having to worry if its within working hours or not.
   </p>
   <h3>To experience our website kindly play the below video: </h3>
+  
+  
+
+https://user-images.githubusercontent.com/70585276/136695366-5d451fd0-6d3c-4c42-9890-4f3b1bef262b.mp4
+
+
+  
   <br>
   <br>
   <h3>To view our website on your device, kindly follow the below steps: </h3>
@@ -24,7 +30,9 @@
     <li style="font-size: 1.2rem">Fork the above repository</li>
     <li style="font-size: 1.2rem">clone the repository by using command :git clone </li>
     <li style="font-size: 1.2rem"> Open project in your terminal and to download all dependencies:  Open the cloned project terminal and run the command npm install. </li>
-    <li style="font-size: 1.2rem"> Now start your mongoDB server by running the command "mongod" and and then in the project directory write: "node app.js"  If you have nodemon already installed, then write: "nodemon app.js"  Now open the server by opening: "https://localhost:3000/" </li>
+    <li style="font-size: 1.2rem"> Now start your mongoDB server by running the command <b> "mongod" </b></li>
+    <li style="font-size: 1.2rem"> Now open the project root in another terminal tab and write: <b>"node app.js"</b>, If you have nodemon already installed then write: <b>"nodemon app.js" </b></li>
+    <li style="font-size: 1.2rem"> Now open the server by opening: <b>"https://localhost:3000/"</b> </li>
   </ul>
   <h3>Website screenshots: </h3>
   
